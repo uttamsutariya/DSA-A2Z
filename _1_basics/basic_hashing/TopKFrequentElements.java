@@ -18,7 +18,7 @@ public class TopKFrequentElements {
 
         List<Map.Entry<Integer, Integer>> ls = new ArrayList<>(hm.entrySet());
 
-        ls.sort((a, b) -> a.getValue() == b.getValue() ? b.getKey() - a.getKey() : b.getValue() - a.getValue());
+        ls.sort((a, b) -> Objects.equals(a.getValue(), b.getValue()) ? b.getKey() - a.getKey() : b.getValue() - a.getValue());
 
         for(int i = 0 ; i<k ; i++) ans[i] = ls.get(i).getKey();
 
