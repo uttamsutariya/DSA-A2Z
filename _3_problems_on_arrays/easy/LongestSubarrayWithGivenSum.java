@@ -1,11 +1,9 @@
 package _3_problems_on_arrays.easy;
 
-import javax.management.MBeanRegistration;
-
 public class LongestSubarrayWithGivenSum {
     public static void main(String[] args) {
-        int[] arr = {2,3,5,1,9};
-        System.out.println(sliding_window(arr, 10));
+        int[] arr = {-1, 2, 3};
+        System.out.println(sliding_window(arr, 6));
     }
 
     public static int naive_sol(int[] arr, int x) {
@@ -46,3 +44,5 @@ public class LongestSubarrayWithGivenSum {
         return maxLength;
     }
 }
+
+//  https://takeuforward.org/data-structure/longest-subarray-with-given-sum-k/
