@@ -5,3 +5,5 @@ This Sheet is made for people who want to learn DSA from A to Z for free in a we
 
 # Link:
 https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
+
+** problem link is attached at the end of the solution of every problem.
