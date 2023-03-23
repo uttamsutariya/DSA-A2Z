@@ -37,3 +37,5 @@ public class MajorityElement {
         return elem;
     }
 }
+// https://leetcode.com/problems/majority-element/
+// https://leetcode.com/problems/subarray-sum-equals-k/
