@@ -2,7 +2,7 @@ package _4_binary_search.on_1d;
 
 public class FindPivotElement {
     public static void main(String[] args) {
-        int[] arr = {8,10,17,1,3};
+        int[] arr = {5,1,2,3,4};
         System.out.println(findPivot(arr));
     }
 
@@ -15,7 +15,7 @@ public class FindPivotElement {
             if(arr[mid] > arr[0]) s = mid+1;
             else e = mid;
         }
-        return s;   // or return e;
+        return e;   // or return e;
     }
 }
  /**
