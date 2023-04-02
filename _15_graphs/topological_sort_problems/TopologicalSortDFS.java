@@ -3,7 +3,7 @@ package _15_graphs.topological_sort_problems;
 import java.sql.Statement;
 import java.util.*;
 
-public class TopologicalSort {
+public class TopologicalSortDFS {
     public static void main(String[] args) {
 
     }
