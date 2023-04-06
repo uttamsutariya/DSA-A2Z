@@ -4,19 +4,19 @@ public class ReverseLL {
     //Function to reverse a linked list.
     public static Node reverseList(Node head)
     {
-        Node temp = head;
-        Node prev = null;
+        if(head == null || head.next == null) return head;
 
-        while(temp.next != null) {
-            Node x = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = x;
+        Node curr = head;
+        Node prev = null;
+        Node forward = null;
+
+        while(curr != null) {
+            forward = curr.next;
+            prev = curr;
+            curr = forward;
         }
 
-        temp.next = prev;
-
-        return temp;
+        return prev;
     }
 }
 
