@@ -30,6 +30,10 @@ public class Implementation {
         System.out.println("LevelOrder Traversal");
         levelOrderTraversal(root);
 
+
+        System.out.println();
+        System.out.println("Reverse LevelOrder Traversal");
+        reverseLevelOrderTraversal(root);
         // 1 2 4 -1 -1 5 -1 -1 3 6 -1 -1 -1
     }
 
@@ -78,6 +82,29 @@ public class Implementation {
                 if(node.left != null) q.offer(node.left);
                 if(node.right != null) q.offer(node.right);
             }
+        }
+    }
+
+    public static void reverseLevelOrderTraversal(TreeNode root) {
+        
+        Queue<TreeNode> q = new LinkedList<>();
+
+        ArrayDeque<TreeNode> s = new ArrayDeque<>();  // used as a stack
+
+        q.offer(root);
+
+        while(!q.isEmpty()) {
+
+            TreeNode node = q.poll();
+            s.push(node);
+
+            // push right node before left node
+            if(node.right != null) q.offer(node.right);
+            if(node.left != null) q.offer(node.left);
+        }
+
+        while(!s.isEmpty()) {
+            System.out.print(s.pop().data + " ");
         }
     }
 
